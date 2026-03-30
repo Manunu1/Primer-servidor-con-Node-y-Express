@@ -18,3 +18,10 @@ app.get('/hora', (req, res) => {
 app.get('/fechaCompleta', (req, res) => {
   res.send(FechaCompleta())
 })
+
+app.use((req, res) => {
+  res.status(404).json({
+    error: "Ruta no encontrada",
+    status: 404
+  });
+});
