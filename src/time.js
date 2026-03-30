@@ -1,4 +1,4 @@
-function getDate () 
+export function getDate () 
 {
     const hora = new Date();
 
@@ -6,13 +6,11 @@ function getDate ()
     const minutos = hora.getMinutes();
     const segundos = hora.getSeconds();
 
-    return `${horas}: ${minutos}: ${segundos}`
+    return `${horas}:${minutos}:${segundos}`
 }
 
-function FechaCompleta () 
+export function FechaCompleta () 
 {
     const hoy = new Date();
     return hoy.toLocaleString('es-AR');
 }
-
-export default {getDate, FechaCompleta};

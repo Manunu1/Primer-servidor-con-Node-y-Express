@@ -1,6 +1,5 @@
 import express from 'express'
-import getDate from './src/time.js'
-import FechaCompleta from './src/time.js'
+import {getDate, FechaCompleta} from './src/time.js';
 
 const app = express()
 
